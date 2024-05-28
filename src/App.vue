@@ -263,7 +263,7 @@ img
 }
 .caption {
    position: absolute;
-   top: 37%;
+   top: 80%;
    left: 50%;
    transform: translate( -50%, -50% );
    text-align: center;
@@ -271,11 +271,11 @@ img
    font-weight: bold;
 }
 .p1{
-  font-size: 1.5rem;
+  font-size: 0px;
    margin-bottom: 0.2em;
 }
 .p2{
-  font-size: 0.6rem;
+  font-size: 0px;
    margin-bottom: 0.6em;
 }
 .atuin-btn {
@@ -289,7 +289,6 @@ img
 }
 .item-3 {
   background-size: cover;
- /* min-height: 0vh; */
 }
 }
 

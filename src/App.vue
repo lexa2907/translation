@@ -2,7 +2,7 @@
   <div class="flex-container">
      <main>
        <section class="flex-item item-3">
-         <img src="mmm.jpg" />
+         <img src="mmm2.jpg" />
          <div class="caption">
              <p class="p1">UFC 302: МАХАЧЕВ VS ПОРЬЕ</p>
              <p class="p2">ВОСКРЕСЕНЬЕ, 2 ИЮНЯ 2024 Г., 1:15</p>
@@ -160,7 +160,7 @@
    font-weight: bold;
    text-transform: uppercase; 
    font-family: 'Roboto', Тahoma, sans-serif;
-   background: #a5a6a8;
+   background: rgba(28,28,28,0);
    cursor: pointer; 
    border: 2px solid #BFE2FF;
    overflow: hidden;
@@ -200,7 +200,17 @@
  flex:3;
  min-height: 100vh;
 }
-
+img
+ {
+ width: 100%;
+ height: 100%;
+ }
+ .item-5 {
+ background: linear-gradient(45deg, #070707, #3d3c3c);
+ flex: 2;
+ min-height: 70vh;
+ display: flex;
+}
 
 
 
@@ -223,6 +233,12 @@
  .btn-group button {
    padding: 5px 24px; /* Some padding */
  }
+ .item-5 {
+ background: linear-gradient(45deg, #070707, #3d3c3c);
+ flex: 2;
+ min-height: 100vh;
+ display: flex;
+}
 }
 
 @media (max-width: 501px){
@@ -247,7 +263,7 @@
 }
 .caption {
    position: absolute;
-   top: 21%;
+   top: 37%;
    left: 50%;
    transform: translate( -50%, -50% );
    text-align: center;
@@ -255,7 +271,7 @@
    font-weight: bold;
 }
 .p1{
-  font-size: 0.9rem;
+  font-size: 1.5rem;
    margin-bottom: 0.2em;
 }
 .p2{
@@ -272,20 +288,10 @@
  min-height: 0vh;
 }
 .item-3 {
- min-height: 0vh;
+  background-size: cover;
+ /* min-height: 0vh; */
 }
 }
-
-
-
-
-img
- {
- width: 100%;
- height: 100%;
- object-fit: contain;
- display: block;
- }
 
 
 
@@ -310,13 +316,6 @@ img
  
  color: #000;
  font-size: 16px;
-}
-
-.item-5 {
- background: linear-gradient(45deg, #070707, #3d3c3c);
- flex: 2;
- min-height: 70vh;
- display: flex;
 }
 
 

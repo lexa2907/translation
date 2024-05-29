@@ -23,8 +23,8 @@
         <button v-on:click="greet('chart2')" style="width:33.3%" :class="{activeChartClass: activeChart === 'chart2'}">Трансляция №2</button>
         <button v-on:click="greet('chart3')" style="width:33.3%" :class="{activeChartClass: activeChart === 'chart3'}">Трансляция №3</button>
       </div>
-      <iframe v-if="activeChart === 'chart2'" class="iframeClass" src="https://vk.com/video_ext.php?oid=-223069695&id=456239021&hash=9ed0fd1a3643d920" width="1000px" height="640px" frameborder="0" allowfullscreen="true" scrolling="no" sandbox="allow-same-origin allow-scripts" allow="encrypted-media; fullscreen; picture-in-picture;"></iframe>
-      <iframe v-if="activeChart === 'chart1'" class="iframeClass" src="https://live.vkplay.ru/app/embed/mix111" frameborder="0" allowfullscreen="true" scrolling="no" sandbox="allow-same-origin allow-scripts" allow="encrypted-media; fullscreen; picture-in-picture;"  width="1000px" height="640px"></iframe>
+      <iframe v-if="activeChart === 'chart1'" class="iframeClass" src="https://vk.com/video_ext.php?oid=-223069695&id=456239021&hash=9ed0fd1a3643d920" width="1000px" height="640px" frameborder="0" allowfullscreen="true" scrolling="no" sandbox="allow-same-origin allow-scripts" allow="encrypted-media; fullscreen; picture-in-picture;"></iframe>
+      <iframe v-if="activeChart === 'chart2'" class="iframeClass" src="https://live.vkplay.ru/app/embed/mix111" frameborder="0" allowfullscreen="true" scrolling="no" sandbox="allow-same-origin allow-scripts" allow="encrypted-media; fullscreen; picture-in-picture;"  width="1000px" height="640px"></iframe>
       <iframe v-if="activeChart === 'chart3'" class="iframeClass" src="https://live.vkplay.ru/app/embed/mix111" frameborder="0" allowfullscreen="true" scrolling="no" sandbox="allow-same-origin allow-scripts" allow="encrypted-media; fullscreen; picture-in-picture;"  width="1000px" height="640px"></iframe>
       <video-player crossorigin="anonymous" v-if="activeChart === 'chart4'"  class="playerTranslation" @get-instance="getInstance" :option="option" :key="option.url" />
      </div>
